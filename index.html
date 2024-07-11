@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_50</title>
+    <!-- css link  -->
+   
+   
+     <link rel="stylesheet" href="css/bootstrap.css">
+     
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <section class="js_practice">
+      <div class="container">
+        <div class="row text-center m-5">
+          <div class="col-lg-12">
+
+            <!-- inner html  -->
+ <!-- ex 1 -->
+        <div class="inner mt-2">
+        <h2 id="text_change"> 1.Hey there</h2>
+        <button onclick="textChange()" type="button" class="btn btn-primary"> click here and see more lines</button>
+        </div>
+        <hr>
+ <!-- ex 2 -->
+      <h3>2. Date and Time</h3>
+      <button  onclick="showDate()" type="button" class="btn btn-primary"> see time and date</button>
+      <h3 id="s_date"></h3>
+      <hr>
+
+     <!-- ex 3 -->
+      <h3 class="mt-5">3. Click the button to  on/off  the Bulb</h3>
+      <button onclick="bulbOn()" type="button" class="btn btn-primary"> bulb on</button>
+       <img id="b_img" src="images/pic_bulboff (1).gif" alt="">
+      <button onclick="bulbOff()" type="button" class="btn btn-danger"> bulb off</button> 
+      <hr>
+
+      <!-- ex 4 -->
+      <h3 class="mt-5">4. Click the button to change emoji</h3>
+      <button onclick="smile()" type="button" class="btn btn-dark"> smile</button>
+      <img id="emoji" src="images/pngwing.sad.png" alt="">
+      <button onclick="engry()" type="button" class="btn btn-danger"> engry</button>
+      <hr>
+
+     <!-- ex 5   -->
+     <h3 class="mt-5">5. Click the button to show the text</h3>
+     <button onclick="d_write()" type="button" class="btn btn-dark"> document.write</button>
+     <hr>
+     <!-- ex 6   -->
+     <h3 class="mt-5">6. Click the button to show the text</h3>
+     <button onclick="d_writeTwo()" type="button" class="btn btn-dark"> document.write</button>
+     <hr>
+      <!-- ex 7  -->
+      <h3 class="mt-5">7. Click the button to show alart</h3>
+      <button onclick="showAlart()" type="button" class="btn btn-dark">alert</button>
+      <hr>
+
+     <!-- ex 8  -->
+     <h3 class="mt-5">8. Click the button to show the data into console</h3>
+     <button onclick="showLog()" type="button" class="btn btn-dark">console</button>
+     <hr>
+      <!-- ex 9  -->
+      <h3 class="mt-5">9. Click the button to print</h3>
+      <button onclick="windowprint()" type="button" class="btn btn-dark">window.print</button>
+      <hr>
+      <!-- ex 10 -->
+      <h3 class="mt-5">10. Click the button to show the resul (var)</h3>
+      <button onclick="rAddition()" type="button" class="btn btn-primary">click here!</button>
+      <h3 id="a_result"> The result is</h3>
+      <hr>
+       <!-- ex 11 -->
+       <h3 class="mt-5">11. Click the button to show the result (var)</h3>
+       <button onclick="division()" type="button" class="btn btn-primary">click here!</button>
+       <h3 id="d_result"> The result is</h3>
+       <hr>
+      <!-- ex 12 -->
+      <h3 class="mt-5">12. Click the button to show the result (let)</h3>
+      <button onclick="divisionTwo()" type="button" class="btn btn-primary">click here!</button>
+      <h3 id="dtwo_result"> The result is</h3>
+      <hr>
+      <!-- ex 13 -->
+      <h3 class="mt-5">13. Click the button to show the result</h3>
+      <button onclick="Multiply()" type="button" class="btn btn-primary">click here!</button>
+      <h3 id="P_result"> The  Multiply result is</h3>
+      <hr>
+       <!-- ex 14 -->
+       <h3 class="mt-5">14. Click the button to show the modulus result</h3>
+       <button onclick="modulus()" type="button" class="btn btn-primary">click here!</button>
+       <h3 id="M_result"> The result is</h3>
+       <hr>
+         <!-- ex 15 -->
+         <h3 class="mt-5">15. Click the button to show the result</h3>
+         <button onclick="multi()" type="button" class="btn btn-primary">click here!</button>
+         <h3 id="Multi_result"> The result is</h3>
+         <hr>
+
+           <!-- ex 16 -->
+           <h3 class="mt-5">16. Click the button to show the += (Operators)result</h3>
+           <button onclick="assignAddi()" type="button" class="btn btn-danger">click here!</button>
+           <h3 id="asAdi_result"> The result is</h3>
+           <hr>
+              <!-- ex 17 -->
+              <h3 class="mt-5">17. Click the button to show the -= (Operators)result</h3>
+              <button onclick="assignsub()" type="button" class="btn btn-danger">click here!</button>
+              <h3 id="assub_result"> The result is</h3>
+              <hr>
+               <!-- ex 19 -->
+               <h3 class="mt-5">18. Click the button to show the *= (Operators)result</h3>
+               <button onclick="assignmul()" type="button" class="btn btn-danger">click here!</button>
+               <h3 id="asmul_result"> The result is</h3>
+               <hr>
+                     <!-- ex  -->
+               <h3 class="mt-5">19. Click the button to show the /= (Operators)result</h3>
+               <button onclick="assigndivi()" type="button" class="btn btn-danger">click here!</button>
+               <h3 id="asdivi_result"> The result is</h3>
+               <hr>
+                     <!-- ex  -->
+               <h3 class="mt-5">20. Click the button to show the  (Comparison Operators)result</h3>
+               <button onclick="Comparison()" type="button" class="btn btn-danger">click here!</button>
+               <h3 id="com_result">Is text2 less than text1</h3>
+               <hr>
+                     <!-- ex  -->
+               <h3 class="mt-5">21. Click the button to show the  (Comparison Operators)result</h3>
+               <button onclick="Comparison2()" type="button" class="btn btn-danger">click here!</button>
+               <h3 id="com2_result">Is B less than A</h3>
+               <hr>
+                 <!-- ex  -->
+               <h3 class="mt-5">22. Click the button to show the  ( String Operators)result</h3>
+               <button onclick="Stringj()" type="button" class="btn btn-danger">click here!</button>
+               <h3 id="stri_result">Add string is!</h3>
+               <hr>
+                 <!-- ex  -->
+               <h3 class="mt-5">23. Click the button to show the (+= String Operators)result</h3>
+               <button onclick="Stringjii()" type="button" class="btn btn-danger">click here!</button>
+               <h3 id="string_result">Add assignment and string is!</h3>
+               <hr>
+                 <!-- ex  -->
+               <h3 class="mt-5">24. Click the button to show the (+ String Operators)result</h3>
+               <button onclick="Stringjii3()" type="button" class="btn btn-primary">click here!</button>
+               <h3 id="string3_result">the String is!</h3>
+               <hr>
+                    <!-- ex  -->
+               <h3 class="mt-5">25. Click the button to show the text length </h3>
+               <button onclick="length()" type="button" class="btn btn-primary">click here!</button>
+               <h3 id="length_res">the text length is!</h3>
+               <hr>
+                       <!-- ex  -->
+               <h3 class="mt-5">26. Double quote in a string </h3>
+               <button onclick="double()" type="button" class="btn btn-primary">click here!</button>
+               <h3 id="double_res">the text is!</h3>
+               <hr>
+                       <!-- ex  -->
+               <h3 class="mt-5">27. single quote in a string. </h3>
+               <button onclick="single()" type="button" class="btn btn-primary">click here!</button>
+               <h3 id="Double6_res">the text is!</h3>
+               <hr>
+                        <!-- ex  -->
+               <h3 class="mt-5">28. The on-double click Event </h3>
+               <button ondblclick="event1()" type="button" class="btn btn-dark">click here!</button>
+               <h3 id="event1_res">the text is!</h3>
+               <hr>
+                   <!-- ex  -->
+               <h3 class="mt-5">29. The on-mouse up Event </h3>
+          
+               <h3 onmouseup="event2()" id="event2_res">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis!</h3>
+               <hr>
+                 <!-- ex  -->
+               <h3 class="mt-5">30.The focus Event </h3>
+               <button onfocus="event3()" type="button" class="btn btn-dark">click here!</button>
+                <h3 id="event3_res">Lorem ipsum dolor sit amet.</h3>
+               <hr>
+               <div class="smile_ev">
+                <h3 class="mt-5">31.The onmouseenter Event </h3>
+               
+               <img src="images/emoji3.png"  id="smile_ev"  onmouseenter="event4()" onmouseleave="event5()">
+            
+               </div>
+               <hr>
+               <h3 class="mt-5">32. The on-mouse down Event </h3>
+          
+               <h3 onmouseup="event6()" id="event6_res">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis!</h3>
+               <hr>
+                     <!-- ex  -->
+               <h3 class="mt-5">33. Click the button to get Month</h3>
+               <button onclick="Month()" type="button" class="btn btn-primary">click here!</button>
+               <h3 id="Month_res">The result is!</h3>
+               <hr>
+                       <!-- ex  -->
+               <h3 class="mt-5">34. Click the button to get day</h3>
+               <button onclick="day()" type="button" class="btn btn-primary">click here!</button>
+               <h3 id="day_res">The result is!</h3>
+               <hr>
+               
+                       <!-- ex  -->
+               <h3 class="mt-5">35. Click the button to get hours</h3>
+               <button onclick="hour()" type="button" class="btn btn-primary">click here!</button>
+               <h3 id="hour_res">The result is!</h3>
+               <hr>
+                          <!-- ex  -->
+               <h3 class="mt-5">36. Click the button to get Minutes</h3>
+               <button onclick="Minutes()" type="button" class="btn btn-primary">click here!</button>
+               <h3 id="Minutes_res">The result is!</h3>
+               <hr>
+                  <!-- ex  -->
+               <h3 class="mt-5">37. Click the button to get Seconds</h3>
+               <button onclick="Seconds()" type="button" class="btn btn-primary">click here!</button>
+               <h3 id="Seconds_res">The result is!</h3>
+               <hr>
+                       <!-- ex  -->
+               <h3 class="mt-5">38. Click the button to get future date</h3>
+               <button onclick="future()" type="button" class="btn btn-primary">click here!</button>
+               <h3 id="future_res">The result is!</h3>
+               <hr>
+               <!-- ex  -->
+               <h3 class="mt-5">39. Click the button and submit</h3>
+               <form action="#">
+              
+                <input type="text"  class="form-control" id="name" name="" placeholder="Enter your full name">
+              </div>
+               </form>
+               <button onclick="submit()" type="submit" class="btn btn-submit">click here!</button>
+               <h3 id="submit_res">The result is!</h3>
+               <hr>
+               <!-- ex  -->
+               <h3 class="mt-5">40. The on-select mouse Event </h3>
+               <form action="#">
+              
+                <input onselect="selecti()" type="email"  class="form-control" id="select_res" name="" value="Enter your email">
+            
+               </form>
+               
+
+    <!-- style change  -->
+      <h1 class="text-center m-5" >style change</h1>
+      
+      <div class="button_n mt-5">
+        <h2 id="colorCchange"> 41.Easy to learn</h2>
+        <button onclick="color()" type="button" class="btn btn-primary"> click here to change font color</button>
+      </div>
+      <hr>
+      <div class="button_two mt-5">
+        <h2 id="fontSizCchange">42.Easy to learn</h2>
+        <button onclick="fontSize()" type="button" class="btn btn-primary"> click here to change font-size</button>
+      </div>
+        <hr>
+
+        <div class="button_two mt-5">
+          <h2 id="bkChange">43.Easy to learn</h2>
+          <button onclick="background()" type="button" class="btn btn-primary"> click here to change bg</button>
+        </div>
+        <hr>
+        <div class="button_three mt-5">
+          <h2 id="fontChange">44.Hello</h2>
+          <button onclick=" hide()" type="button" class="btn btn-primary"> click here to hide text </button>
+        </div>
+
+        <hr>
+        <div class="button_four mt-5">
+          <p id="show_item">45.Before your coffe gets cold</p>
+          <button onclick="show()" type="button" class="btn btn-primary"> click here to show text </button>
+          </div>
+          <hr>
+          <div class="button_five mt-5">
+            <p id="fontStyle_change">46.Before your coffe gets cold</p>
+            <button onclick="fontStyle()" type="button" class="btn btn-primary"> click here to change font style </button>
+          </div>
+          <hr>
+          <div class="button_six mt-5">
+            <p id="fontWeight_change">47.Before your coffe gets cold</p>
+            <button onclick="fontWeight()" type="button" class="btn btn-dark"> click here to change font-weight </button>
+          </div>
+          <hr>
+          <div class="button_sev mt-5">
+            <p id="transForm"> 48.Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. <br> Quaerat, officia.</p>
+            <button onclick="textTransform()" type="button" class="btn btn-primary"> click here !</button>
+          </div>
+          <hr>
+          <div class="button_eight mt-5">
+            <p id="shadow"> 49.Lorem ipsum dolor sit amet</p>
+            <button onclick="textShadow()" type="button" class="btn btn-primary"> click here!</button>
+          </div>
+    <!-- style change  -->
+
+
+
+
+        <div class="inbody mt-5">
+          <h5>50 .code is inserted between script tag</h5>
+          <p id="inbody"></p>
+        </div>
+          </div>
+
+        </div>
+      
+      
+      
+          
+        </div>
+      </div> 
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script>
+      document.getElementById('inbody').innerHTML="My first try";
+    </script>
+</body>
+</html>
